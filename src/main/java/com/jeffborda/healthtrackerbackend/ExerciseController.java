@@ -21,9 +21,7 @@ public class ExerciseController {
     public String getExercises() {
 
         Gson gson = new Gson();
-        String testReturnJson =  gson.toJson(exerciseRepo.findAll());
-
-        return testReturnJson;
+        return gson.toJson(exerciseRepo.findAll());
     }
 
 
